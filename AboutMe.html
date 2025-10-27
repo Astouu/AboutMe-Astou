@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de compétences – Astou KAIRE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #005a9c;
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: #005a9c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in:nth-of-type(1) { animation-delay: 0.2s; }
+.fade-in:nth-of-type(2) { animation-delay: 0.4s; }
+.fade-in:nth-of-type(3) { animation-delay: 0.6s; }	
+    
+  </style>
+</head>
+
+
+<body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in-scroll').forEach(el => observer.observe(el));
+  });
+</script>
+
+
+  <h1>👩‍💻 About me !</h1>
+  <p><strong>Nom :</strong> Astou KAIRE<br>
+     <strong>Localisation :</strong> France<br>
+     <strong>LinkedIn :</strong> <a href="https://linkedin.com/in/astou-kaïré-1a3a5b1b8" target="_blank">Profil LinkedIn</a>
+<div style="margin-top: 20px;">
+  <a href="IT&IoT_Engineer.pdf" download style="background-color:#005a9c; color:white; padding:12px 24px; text-decoration:none; border-radius:6px; margin-right:10px; display:inline-block;">📄 Télécharger mon CV</a>
+
+  <a href="#contact" style="background-color:#28a745; color:white; padding:12px 24px; text-decoration:none; border-radius:6px; display:inline-block;">🤝 Proposer une collaboration</a>
+</div>
+
+  </p>
+
+  <div class="section fade-in-scroll">
+    <h2>🧠 Profil</h2>
+    <p>Ingénieure diplômée en systèmes complexes, spécialisée en réseaux, signaux et éco-TIC. Passionnée par les environnements techniques exigeants, les systèmes industriels et les enjeux de cybersécurité. Curieuse, rigoureuse et proactive, je m’investis dans des projets à fort impact technologique et environnemental.</p>
+  </div>
+  <div class="section fade-in-scroll">
+  <h2>🌟 Mon histoire, mes valeurs et ma vision</h2>
+  <p>
+    Depuis toujours, l’aéronautique me fascine. Pas seulement ce qui vole, mais ce qui les fait voler : les systèmes embarqués, les architectures techniques, la rigueur du génie aéronautique. C’est ce qui m’a guidée vers une formation en Science Pour l'Ingénieur.
+  </p>
+  <p>
+    Mais au fil de mon parcours, j’ai découvert une autre dimension tout aussi passionnante : celle des réseaux, de l’informatique industrielle et de la cybersécurité. Cette “partie cachée” m’a captivée par sa complexité, sa transversalité et son rôle stratégique dans les environnements critiques.
+  </p>
+  <p>
+    Aujourd’hui, je ne choisis pas entre les deux. Je veux évoluer dans le secteur aéronautique, en y apportant mes compétences en IT, en sécurité des systèmes et en connectivité industrielle. Mon objectif : contribuer à des projets à fort impact technologique, où précision, innovation et fiabilité sont essentielles.
+  </p>
+  <p>
+    Ce qui me guide, ce sont des valeurs simples mais puissantes : <strong>la curiosité</strong>, <strong> la rigueur</strong> et <strong> l’engagement</strong. Je crois en une ingénierie utile, responsable et tournée vers l’avenir. Et je veux faire partie de celles et ceux qui construisent les systèmes de demain — dans les airs comme sur terre.
+  </p>
+</div>
+
+  <div class="section fade-in-scroll">
+    <h2>🛠️ Compétences techniques</h2>
+    <table>
+      <tr><th>Domaine</th><th>Compétences</th></tr>
+      <tr><td>Réseaux & Infrastructure</td><td>TCP/IP, VLAN, VPN, MPLS, DMVPN, Wireshark, Cisco Packet Tracer</td></tr>
+      <tr><td>Systèmes & Virtualisation</td><td>Linux, Windows Server, Active Directory</td></tr>
+      <tr><td>Cybersécurité</td><td>Sécurisation des accès, protocoles sécurisés, veille sécurité</td></tr>
+      <tr><td>IoT & Systèmes embarqués</td><td>Capteurs, MQTT, architecture IoT industrielle</td></tr>
+      <tr><td>Cloud & DevOps</td><td>Notions de AWS, Azure, Bash, GitHub Actions</td></tr>
+    </table>
+  </div>
+
+  <div class="section fade-in-scroll">
+    <h2>📚 Compétences transversales</h2>
+    <ul>
+      <li>Analyse fonctionnelle et technique</li>
+      <li>Rédaction de documentation claire</li>
+      <li>Gestion de projet technique (cycle en V, Agile)</li>
+      <li>Communication fluide en français et anglais</li>
+      <li>Travail en équipe et sens du service</li>
+      <li>Autonomie et esprit d’initiative</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in-scroll">
+    <h2>🎓 Formations complémentaires</h2>
+    <ul>
+      <li>Cours en ligne en cybersécurité (Udemy, Google, Coursera…)</li>
+      <li>Auto-formation sur les architectures sécurisées</li>
+      <li>Projets étudiants en visualisation de données et systèmes intelligents</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in-scroll">
+    <h2>💼 Expériences marquantes</h2>
+	
+    <p><strong>Safran Aerosystems – Alternance IT (2023–2024)</strong></p>
+    <ul>
+      <li>Administration réseau et gestion de parc informatique</li>
+      <li>Conception d’architectures réseau pour espaces OpenSpace</li>
+      <li>Intégration de solutions IoT dans un environnement industriel</li>
+      <li>Résolution d’incidents via ServiceNow et documentation technique</li>
+    </ul>
+  </div>
+
+  <div class="section fade-in-scroll">
+  <h2>📁 Projets académiques</h2>
+
+  <section id="satrap-project" class="project-section">
+    <h2>🚚 SATrap – Service Automatisé de Transport de Produits</h2>
+    <p><strong>Contexte :</strong> Projet réalisé au sein de l’AIP-Primeca Nancy, dans une démarche Industrie 4.0.</p>
+    <p><strong>Objectif :</strong> Automatiser la gestion et la livraison de fournitures dans un environnement pédagogique et industriel.</p>
+
+    <h3>Fonctionnement du système :</h3>
+    <ul>
+      <li>Commande via interface web</li>
+      <li>Vérification du stock</li>
+      <li>Notification à la secrétaire</li>
+      <li>Mise à jour de la base de données</li>
+      <li>Déclenchement du robot mobile Omron</li>
+    </ul>
+
+    <h3>Technologies mobilisées :</h3>
+    <ul>
+      <li>Interface utilisateur intuitive</li>
+      <li>Communication entre modules</li>
+      <li>Intégration du robot Omron</li>
+      <li>Base de données dynamique</li>
+      <li>Automatisation des tâches</li>
+    </ul>
+
+    <h3>Compétences mises en œuvre :</h3>
+    <ul>
+      <li>Systèmes connectés et intelligents</li>
+      <li>Programmation orientée interface</li>
+      <li>Collaboration interdisciplinaire</li>
+      <li>Gestion de base de données</li>
+      <li>Optimisation des processus internes</li>
+    </ul>
+  </section>
+
+  <section id="progress4" class="project-section">
+    <h2>🏭 ProGreSS 4.0 – Plateforme de production et régénération intelligente</h2>
+    <p><strong>Contexte :</strong> Projet de recherche mené au sein de l’AIP-Primeca Lorraine et du CRAN.</p>
+    <p><strong>Objectif :</strong> Concevoir une plateforme autonome, durable et intelligente pour la régénération de produits.</p>
+
+    <h3>⚙️ Cas d’usage : Régénération de mini-moteurs</h3>
+    <ul>
+      <li>Diagnostic automatisé</li>
+      <li>Réparation ou remplacement</li>
+      <li>Reconditionnement</li>
+      <li>Traçabilité du cycle de vie</li>
+    </ul>
+
+    <h3>🧠 Ingénierie système & MOE amont</h3>
+    <ul>
+      <li>Recueil des exigences</li>
+      <li>Définition des architectures</li>
+      <li>Modélisation des flux</li>
+      <li>Structuration du projet</li>
+    </ul>
+
+    <h3>💻 Développement logiciel & infrastructure</h3>
+    <ul>
+      <li>Programmation en C++</li>
+      <li>Scripts Python</li>
+      <li>Architecture réseau industrielle</li>
+      <li>Robots collaboratifs</li>
+    </ul>
+
+    <h3>🎯 Enjeux industriels et pédagogiques</h3>
+    <ul>
+      <li>Réduction des interventions humaines</li>
+      <li>Flexibilité des processus</li>
+      <li>Formation à l’Industrie 4.0</li>
+      <li>Valorisation durable</li>
+    </ul>
+  </section>
+
+  <section id="aip-comfort" class="project-section">
+    <h2>🌡️ AIP Comfort – Suivi intelligent du confort des salles</h2>
+    <p><strong>Contexte :</strong> Projet réalisé à l’AIP-Primeca Nancy pour améliorer le confort étudiant via des capteurs connectés.</p>
+    <p><strong>Objectif :</strong> Dashboard interactif pour visualiser les conditions des salles en temps réel.</p>
+
+    <h3>📊 Fonctionnement du système</h3>
+    <ul>
+      <li>Capteurs : température, humidité, bruit, présence</li>
+      <li>Collecte et traitement des données</li>
+      <li>Dashboard web accessible aux étudiants</li>
+      <li>Visualisation intuitive des conditions</li>
+    </ul>
+
+    <h3>🧠 Technologies et compétences mobilisées</h3>
+    <ul>
+      <li>Capteurs IoT et communication M2M</li>
+      <li>Traitement de données en temps réel</li>
+      <li>Développement d’un dashboard</li>
+      <li>Architecture réseau locale</li>
+      <li>Collaboration interdisciplinaire</li>
+    </ul>
+
+    <h3>🎯 Impact et valeur ajoutée</h3>
+    <ul>
+      <li>Confort et autonomie des étudiants</li>
+      <li>Optimisation des espaces pédagogiques</li>
+      <li>Sensibilisation au smart building</li>
+      <li>Application concrète de l’Industrie 4.0</li>
+    </ul>
+</section>
+</div>
+
+  <div class="section fade-in-scroll">
+    <h2>🌍 Langues & Soft Skills</h2>
+    <table>
+      <tr><th>Langue</th><th>Niveau</th></tr>
+      <tr><td>Français</td><td>Langue maternelle</td></tr>
+      <tr><td>Anglais</td><td>Professionnel (écrit et oral)</td></tr>
+    </table>
+    <ul>
+      <li>💡 Curiosité, adaptabilité, esprit d’équipe</li>
+      <li>📋 Sens de la pédagogie, organisation</li>
+      <li>🚀 Goût pour l’innovation et les environnements multiculturels</li>
+    </ul>
+  </div>
+
+<div class="section fade-in-scroll">
+  <h2>📖 Ce que j’apprends en ce moment</h2>
+  <ul>
+    <li>💻 <strong>HTML & CSS</strong> avec <em>Sololearn</em> – pour renforcer mes bases en développement web</li>
+    <li>🧠 <strong>Learning AI Through Visualization</strong> – cours de l’Université de Columbia sur l’intelligence artificielle et la visualisation</li>
+    <li>🐍 <strong>Python</strong> avec <em>Micode</em> – pour automatiser, analyser et créer des projets interactifs</li>
+    <li>🔐 <strong>Cybersécurité</strong> sur <em>Coursera</em> – pour approfondir les bonnes pratiques et les protocoles de sécurité</li>
+  </ul>
+</div>
+
+
+<div class="section fade-in-scroll" id="contact">
+  <h2>📬 Me contacter</h2>
+  <form action="https://formspree.io/f/manpzlka" method="POST" style="max-width: 600px;">
+    <label for="name">👤 Nom :</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <label for="email">📧 Email :</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <label for="message">💬 Message :</label><br>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 20px;"></textarea><br>
+
+    <button type="submit" style="background-color:#005a9c; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Envoyer</button>
+    <button type="reset" style="background-color:#ccc; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Réinitialiser</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
